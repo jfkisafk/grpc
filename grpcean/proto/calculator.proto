@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package calculator;
+
+// The calculator service definition.
+service Calculator {
+  rpc Add(CalculationRequest) returns (CalculationResult);
+  rpc Subtract(CalculationRequest) returns (CalculationResult);
+  rpc Multiply(CalculationRequest) returns (CalculationResult);
+  rpc Divide(CalculationRequest) returns (CalculationResult);
+  rpc Sum(NumbersRequest) returns (CalculationResult);
+}
+
+// The request message containing the values that
+// we want to perform calculation on.
+message CalculationRequest {
+  int64 a = 1;
+  int64 b = 2;
+}
+
+// The response message containing the result of the
+// calculation.
+message CalculationResult {
+  int64 result = 1;
+}
+
+message NumbersRequest {
+  repeated int64 numbers = 1;
+}

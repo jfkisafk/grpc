@@ -5,6 +5,7 @@ Sample GRPC Calculator apps in multiple languages. This is practice project for 
 ## Languages
 
 - [Go](https://go.dev/)
+- [Rust](https://www.rust-lang.org/)
 
 ## Getting Started
 

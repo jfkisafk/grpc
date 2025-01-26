@@ -14,20 +14,24 @@ Sample GRPC Calculator apps in multiple languages. This is practice project for 
 - Docker is necessary to build and run the apps.
 - gRPC client like [grpcurl](https://github.com/fullstorydev/grpcurl) or [grpcui](https://github.com/fullstorydev/grpcui) is necessary to test the apps.
 
-### Build
-
-```bash
-docker build -t grpc/calculator .
-```
-
 ### Run
 
 ```bash
-docker run -p 8080:8080 grpc/calculator
+docker compose up -d --build
 ```
 
-### Test
+### Test (Go)
 
 ```bash
 grpcurl -plaintext -d '{"numbers": [5, 10, 15, -5]}' localhost:7777 calculator.Calculator.Sum
 ```
+
+### Test (Rust)
+
+```bash
+grpcurl -plaintext -d '{"numbers": [5, 10, 15, -5]}' localhost:7878 calculator.Calculator.Sum
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

@@ -1,0 +1,43 @@
+# Version control
+.git
+.gitignore
+
+# Build artifacts
+/target
+*.rs.bk
+
+# Dependency directories
+/vendor
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Rust-specific
+debug/
+release/
+*.pdb
+
+# Temporary files
+tmp/
+temp/
+
+# Docker-related
+Dockerfile
+.dockerignore
+
+# Local development files
+*.local

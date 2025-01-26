@@ -63,7 +63,7 @@ impl Calculator for CalculatorService {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let addr = "[::1]:8080".parse()?;
+    let addr = "[::0]:8080".parse()?;
 
     let calc = CalculatorService::default();
 

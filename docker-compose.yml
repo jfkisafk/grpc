@@ -1,0 +1,15 @@
+services:
+  rust-server:
+    container_name: rust
+    build:
+      context: ./grpcean
+      dockerfile: Dockerfile
+    ports:
+      - "7878:8080"
+  go-server:
+    container_name: golang
+    build:
+      context: ./grpcgo
+      dockerfile: Dockerfile
+    ports:
+      - "7777:8080"

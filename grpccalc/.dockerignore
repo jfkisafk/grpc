@@ -1,0 +1,46 @@
+# Version control
+.git
+.gitignore
+
+# Local development files
+*.env
+.env
+.env.*
+
+# Compiled files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+build/
+
+# Dependency directories
+vendor/
+node_modules/
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Mac system files
+.DS_Store
+
+# Go-specific
+*.test
+*.out
+coverage.txt
+
+# Dockerfile and docker-related
+Dockerfile
+.dockerignore
